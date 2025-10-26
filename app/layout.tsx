@@ -22,6 +22,11 @@ export const metadata: Metadata = {
     card: 'summary_large_image',
     title: site.name,
     description: site.description
+  },
+  icons: {
+    icon: '/logo.png',
+    shortcut: '/logo.png',
+    apple: '/logo.png'
   }
 }
 
