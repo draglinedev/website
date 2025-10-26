@@ -10,8 +10,10 @@
 
 ## Deploy (Vercel)
 - Connect repo to Vercel → framework auto-detected (Next.js).
-- Add env if any (none required by default).
-- Set build command: `next build` and output: `.next` (defaults ok).
+- Environment variables:
+  - `RESEND_API_KEY` (Production + Preview) for contact form emails; set in Vercel → Project → Settings → Environment Variables.
+- Build settings: defaults ok (`next build`). Vercel uses `npm` (pnpm artifacts removed).
+- After deploy, verify `/contact` → `/thank-you` redirect and check inbox for email.
 
 ## DNS (Squarespace → Vercel)
 - In Squarespace DNS, add the A/AAAA/CNAME records Vercel provides for your domain.
