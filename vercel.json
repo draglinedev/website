@@ -1,16 +1,11 @@
 {
+  "version": 2,
   "cleanUrls": true,
-  "headers": [
-    {
+
+  "installCommand": "pnpm install --no-frozen-lockfile",
   "buildCommand": "vercel build",
-  "installCommand": "pnpm install --no-frozen-lockfile"
-},
-{
-  "packageManager": "pnpm@10.0.0",
-  "engines": { "pnpm": ">=10 <11" }
-},
 
-
+  "headers": [
     {
       "source": "/(.*)",
       "headers": [
