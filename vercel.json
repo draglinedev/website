@@ -3,8 +3,6 @@
   "cleanUrls": true,
 
   "installCommand": "pnpm install --no-frozen-lockfile",
-  "buildCommand": "vercel build",
-
   "headers": [
     {
       "source": "/(.*)",
