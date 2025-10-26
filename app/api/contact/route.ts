@@ -21,10 +21,14 @@ export async function POST(request: Request) {
   const resendApiKey = process.env.RESEND_API_KEY
   if (resendApiKey) {
     const resend = new Resend(resendApiKey)
+    const recipientsEnv = process.env.CONTACT_RECIPIENTS
+    const recipients = recipientsEnv
+      ? recipientsEnv.split(',').map(s => s.trim()).filter(Boolean)
+      : ['draglinedevelopers@gmail.com', 'hello@draglinedevelopers.com']
     try {
       await resend.emails.send({
-        from: 'onboarding@resend.dev',
-        to: ['draglinedevelopers@gmail.com', 'hello@draglinedevelopers.com'],
+        from: 'contact@draglinedevelopers.com',
+        to: recipients,
         replyTo: email,
         subject: `New contact submission from ${name}`,
         html: `

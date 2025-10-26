@@ -12,6 +12,7 @@
 - Connect repo to Vercel → framework auto-detected (Next.js).
 - Environment variables:
   - `RESEND_API_KEY` (Production + Preview) for contact form emails; set in Vercel → Project → Settings → Environment Variables.
+  - `CONTACT_RECIPIENTS` comma-separated list of recipients (e.g., `draglinedevelopers@gmail.com,hello@draglinedevelopers.com`).
 - Build settings: defaults ok (`next build`). Vercel uses `npm` (pnpm artifacts removed).
 - After deploy, verify `/contact` → `/thank-you` redirect and check inbox for email.
 
