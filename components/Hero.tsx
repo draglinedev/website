@@ -10,7 +10,7 @@ export default function Hero() {
         <p className="mt-4 text-lg text-white/80 max-w-2xl">We help founders and teams plan, design, and ship production grade apps with clean code, clear communication, and predictable delivery.</p>
         <div className="mt-6 flex gap-3">
           <Link href="/contact" className="inline-flex items-center px-4 py-2 rounded-xl border border-white/70 text-white no-underline hover:bg-red-900">Start a project</Link>
-          <Link href="/work" className="inline-flex items-center px-4 py-2 rounded-xl border border-white/70 text-white no-underline hover:bg-white hover:text-black">See our work</Link>
+          {/* <Link href="/work" className="inline-flex items-center px-4 py-2 rounded-xl border border-white/70 text-white no-underline hover:bg-white hover:text-black">See our work</Link> */}
         </div>
       </div>
     </section>

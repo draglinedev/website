@@ -2,6 +2,16 @@
   "cleanUrls": true,
   "headers": [
     {
+  "buildCommand": "vercel build",
+  "installCommand": "pnpm install --no-frozen-lockfile"
+},
+{
+  "packageManager": "pnpm@10.0.0",
+  "engines": { "pnpm": ">=10 <11" }
+},
+
+
+    {
       "source": "/(.*)",
       "headers": [
         { "key": "X-Content-Type-Options", "value": "nosniff" },
