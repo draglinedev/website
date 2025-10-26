@@ -1,0 +1,30 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --radius: 1rem;
+}
+
+html, body {
+  height: 100%;
+}
+body {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+main {
+  flex: 1 0 auto;
+}
+
+html:focus-within { scroll-behavior: smooth }
+body { @apply bg-white text-gray-900 antialiased }
+a { @apply underline-offset-2 decoration-transparent hover:decoration-current }
+.container { @apply max-w-6xl mx-auto px-4 sm:px-6 }
+.prose p { @apply leading-7 }
+.prose h2 { @apply text-2xl font-semibold mt-8 mb-3 }
+.prose h3 { @apply text-xl font-semibold mt-6 mb-2 }
+.prose ul { @apply list-disc ml-6 }
+.prose ol { @apply list-decimal ml-6 }
+button:focus-visible, a:focus-visible { @apply outline-none ring-2 ring-brand-400 rounded }
